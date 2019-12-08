@@ -1,7 +1,9 @@
-##homework after java class  
+homework after java class
+=======================  
 1. First import maven project and commit the github
 2. exercise classroom practice 
-##random exercise
+##random exercise  
+		
 		boolean flag = true;
 		while(flag) {
 			int number = (int)(Math.random()*1000)+1;
