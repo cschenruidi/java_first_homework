@@ -3,7 +3,7 @@ homework after java class
 1. First import maven project and commit the github
 2. exercise classroom practice 
 ##random exercise  
-		
+
 		boolean flag = true;
 		while(flag) {
 			int number = (int)(Math.random()*1000)+1;
@@ -14,7 +14,8 @@ homework after java class
 				System.out.println("随机数" + number);
 			}
 		}
-##give you a age，then determine the age
+##give you a age，then determine the age  
+
 		Scanner sc = new Scanner(System.in);
 		//age
 		int age = sc.nextInt();
@@ -28,7 +29,9 @@ homework after java class
 		if(age > 6)System.out.println("少年人");
 		
 		if(age > 0)System.out.println("儿童");
-##print singular number from 0 to 100 and count
+##print singular number from 0 to 100 and count  
+		  
+
 		//计数
 		int count = 0;
 		for(int i = 0 ; i <= 100 ; i++) {
