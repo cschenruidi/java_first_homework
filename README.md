@@ -107,7 +107,7 @@ algorithm of 吸血鬼
     <td align="center"> c&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp b</td>
   </tr>
 </table>    
-  
+
 
   ### 按照十二种情况进行判断  
 
@@ -181,3 +181,30 @@ algorithm of 吸血鬼
   + 空间复杂度：常量
   + 频度分析考虑最坏情况次数: 2\*4\*12\*9000 = 864000 
   + T（n）=2n * n + 2 
+  
+  回文数
+==========================
+## 要点分析  
+  1. 负数 -121回文 121-
+  2. 结尾为0的数520回文025
+  3. 不能采用字符串反转比较025这种情况无法处理，所以只能进行数值操作按位取余运算   
+	
+**************************  
+##   方法一
+		传统方法取出每一位然后反转计算值，再进行比较这样可能会出现溢出的情况且运算次数较多
+
+
+## 方法二对称进行比较   
+		public boolean isPalindrome(int x) {
+         if(x < 0 || x !=0 && x%10 == 0)return false;
+         
+         int temp = 0;
+         while(x > temp) {
+             temp = temp*10 + x%10;
+             x = x/10;
+         }
+        return x == temp || x == temp/10;
+    }
+	时间复杂度：T（n） = 2\*2\n+2
+	o(n) = log2n
+	相较于第一种n就比较好
